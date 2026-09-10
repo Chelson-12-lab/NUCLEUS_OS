@@ -1,0 +1,153 @@
+-- NUCLEUS OS DATABASE SETUP
+-- Nuclear Waste & Radiation Monitoring System
+
+CREATE DATABASE IF NOT EXISTS nucleus_os;
+USE nucleus_os;
+
+-- 1. USERS
+CREATE TABLE IF NOT EXISTS users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    role VARCHAR(30) NOT NULL
+);
+
+-- 2. NUCLEAR POWER PLANTS
+CREATE TABLE IF NOT EXISTS nuclear_power_plants (
+    plant_id INT AUTO_INCREMENT PRIMARY KEY,
+    plant_name VARCHAR(100) NOT NULL,
+    location VARCHAR(150) NOT NULL
+);
+
+-- 3. REACTORS
+CREATE TABLE IF NOT EXISTS reactors (
+    reactor_id INT AUTO_INCREMENT PRIMARY KEY,
+    plant_id INT,
+    reactor_type VARCHAR(100),
+    capacity DECIMAL(12,2),
+    operating_status VARCHAR(50)
+);
+
+-- 4. POWER GENERATION
+CREATE TABLE IF NOT EXISTS power_generation (
+    generation_id INT AUTO_INCREMENT PRIMARY KEY,
+    reactor_id INT,
+    generation_date DATE,
+    electricity_generated DECIMAL(15,2)
+);
+
+-- 5. FUEL MANAGEMENT
+CREATE TABLE IF NOT EXISTS fuel_management (
+    fuel_id INT AUTO_INCREMENT PRIMARY KEY,
+    reactor_id INT,
+    fuel_type VARCHAR(100),
+    quantity DECIMAL(12,2),
+    usage_status VARCHAR(50)
+);
+
+-- 6. FUEL ROD TRACKING
+CREATE TABLE IF NOT EXISTS fuel_rod_tracking (
+    rod_id INT AUTO_INCREMENT PRIMARY KEY,
+    reactor_id INT,
+    installation_date DATE,
+    remaining_life DECIMAL(10,2)
+);
+
+-- 7. RADIATION MONITORING
+CREATE TABLE IF NOT EXISTS radiation_monitoring (
+    sensor_record_id INT AUTO_INCREMENT PRIMARY KEY,
+    sensor_name VARCHAR(100) NOT NULL,
+    radiation_reading DECIMAL(12,4),
+    alert_generation VARCHAR(50),
+    area_monitoring VARCHAR(150),
+    recorded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 8. RADIOACTIVE WASTE
+CREATE TABLE IF NOT EXISTS radioactive_waste (
+    waste_id INT AUTO_INCREMENT PRIMARY KEY,
+    waste_category VARCHAR(100),
+    radiation_level DECIMAL(12,4),
+    storage_assignment VARCHAR(150)
+);
+
+-- 9. WASTE STORAGE
+CREATE TABLE IF NOT EXISTS waste_storage (
+    storage_id INT AUTO_INCREMENT PRIMARY KEY,
+    storage_building VARCHAR(100),
+    capacity DECIMAL(12,2),
+    available_space DECIMAL(12,2),
+    inspection_records VARCHAR(500)
+);
+
+-- 10. EMPLOYEES / HR
+CREATE TABLE IF NOT EXISTS employees (
+    employee_id INT AUTO_INCREMENT PRIMARY KEY,
+    employee_name VARCHAR(100),
+    department VARCHAR(100),
+    salary DECIMAL(12,2),
+    promotion_status VARCHAR(100),
+    performance_record VARCHAR(500)
+);
+
+-- 11. EMPLOYEE RADIATION EXPOSURE
+CREATE TABLE IF NOT EXISTS employee_exposure (
+    exposure_id INT AUTO_INCREMENT PRIMARY KEY,
+    employee_id INT,
+    daily_exposure DECIMAL(12,4),
+    monthly_exposure DECIMAL(12,4),
+    safe_limit DECIMAL(12,4),
+    limit_status VARCHAR(50),
+    recorded_date DATE
+);
+
+-- 12. SAFETY INSPECTION
+CREATE TABLE IF NOT EXISTS safety_records (
+    safety_id INT AUTO_INCREMENT PRIMARY KEY,
+    safety_title VARCHAR(150),
+    safety_description VARCHAR(500),
+    risk_level VARCHAR(50),
+    action_required VARCHAR(500),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 13. CAREER PROTOCOL
+CREATE TABLE IF NOT EXISTS career_records (
+    career_id INT AUTO_INCREMENT PRIMARY KEY,
+    employee_id INT,
+    position_name VARCHAR(100),
+    candidate_name VARCHAR(100),
+    career_status VARCHAR(50),
+    notes VARCHAR(500)
+);
+
+-- 14. PAYROLL
+CREATE TABLE IF NOT EXISTS payroll (
+    payroll_id INT AUTO_INCREMENT PRIMARY KEY,
+    employee_id INT,
+    salary DECIMAL(12,2),
+    payment_date DATE,
+    payment_status VARCHAR(50)
+);
+
+-- 15. EQUIPMENT
+CREATE TABLE IF NOT EXISTS equipment (
+    equipment_id INT AUTO_INCREMENT PRIMARY KEY,
+    equipment_name VARCHAR(100),
+    equipment_type VARCHAR(100),
+    equipment_status VARCHAR(50)
+);
+
+-- 16. MAINTENANCE
+CREATE TABLE IF NOT EXISTS maintenance (
+    maintenance_id INT AUTO_INCREMENT PRIMARY KEY,
+    equipment_name VARCHAR(100),
+    maintenance_date DATE,
+    maintenance_status VARCHAR(100)
+);
+
+-- CHECK ALL TABLES
+SHOW TABLES;
+
+
