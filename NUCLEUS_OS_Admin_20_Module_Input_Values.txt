@@ -1,0 +1,483 @@
+NUCLEUS OS - ADMIN MENU
+20 INPUT VALUES FOR EACH OF THE 20 MODULES
+======================================================================
+
+IMPORTANT: These are sample/demo values for the educational NUCLEUS OS project.
+Radiation, exposure, temperature, fuel, storage and safety thresholds are
+simulated project values and are NOT real nuclear plant operating limits.
+
+1. USER MANAGEMENT
+------------------
+Fields: Username | Password | Email | Role
+01. admin01 | Admin@123 | admin@nucleus.com | Admin
+02. manager01 | Manager@123 | manager@nucleus.com | Plant Manager
+03. engineer01 | Engineer@123 | engineer@nucleus.com | Engineer
+04. safety01 | Safety@123 | safety@nucleus.com | Safety Officer
+05. admin02 | Admin@456 | admin2@nucleus.com | Admin
+06. manager02 | Manager@456 | manager2@nucleus.com | Plant Manager
+07. engineer02 | Engineer@456 | engineer2@nucleus.com | Engineer
+08. safety02 | Safety@456 | safety2@nucleus.com | Safety Officer
+09. hr01 | HR@123 | hr@nucleus.com | Admin
+10. operator01 | Operator@123 | operator@nucleus.com | Engineer
+11. supervisor01 | Supervisor@123 | supervisor@nucleus.com | Plant Manager
+12. safety03 | Safety@789 | safety3@nucleus.com | Safety Officer
+13. engineer03 | Engineer@789 | engineer3@nucleus.com | Engineer
+14. manager03 | Manager@789 | manager3@nucleus.com | Plant Manager
+15. admin03 | Admin@789 | admin3@nucleus.com | Admin
+16. operator02 | Operator@456 | operator2@nucleus.com | Engineer
+17. safety04 | Safety@456 | safety4@nucleus.com | Safety Officer
+18. engineer04 | Engineer@321 | engineer4@nucleus.com | Engineer
+19. manager04 | Manager@321 | manager4@nucleus.com | Plant Manager
+20. admin04 | Admin@321 | admin4@nucleus.com | Admin
+
+2. NUCLEAR POWER PLANT
+----------------------
+Fields: Plant ID | Plant Name | Location | Capacity MW | Status
+01. NPP-001 | NUCLEUS Nuclear Power Plant | Tamil Nadu | 2000 | Operational
+02. NPP-002 | Coastal Nuclear Power Plant | Andhra Pradesh | 1400 | Operational
+03. NPP-003 | Southern Energy Plant | Karnataka | 1600 | Operational
+04. NPP-004 | Eastern Nuclear Plant | Odisha | 1200 | Operational
+05. NPP-005 | Western Nuclear Plant | Gujarat | 1800 | Maintenance
+06. NPP-006 | Central Nuclear Plant | Madhya Pradesh | 1000 | Operational
+07. NPP-007 | Northern Energy Plant | Rajasthan | 1500 | Operational
+08. NPP-008 | River Nuclear Plant | Uttar Pradesh | 1300 | Operational
+09. NPP-009 | Coastal Energy Plant | Maharashtra | 1700 | Operational
+10. NPP-010 | Green Energy Nuclear Plant | Tamil Nadu | 1100 | Operational
+11. NPP-011 | National Nuclear Plant A | Kerala | 900 | Planned
+12. NPP-012 | National Nuclear Plant B | Telangana | 1250 | Operational
+13. NPP-013 | National Nuclear Plant C | Andhra Pradesh | 1450 | Operational
+14. NPP-014 | National Nuclear Plant D | Gujarat | 1550 | Operational
+15. NPP-015 | National Nuclear Plant E | Rajasthan | 1350 | Maintenance
+16. NPP-016 | National Nuclear Plant F | Odisha | 1150 | Operational
+17. NPP-017 | National Nuclear Plant G | Karnataka | 1050 | Operational
+18. NPP-018 | National Nuclear Plant H | Tamil Nadu | 1650 | Operational
+19. NPP-019 | National Nuclear Plant I | Maharashtra | 1750 | Operational
+20. NPP-020 | National Nuclear Plant J | Uttar Pradesh | 950 | Operational
+
+3. REACTOR MANAGEMENT
+---------------------
+Fields: Reactor ID | Plant ID | Reactor Type | Capacity MW | Status | Shutdown History
+01. R-001 | NPP-001 | PHWR | 700 | Operational | No previous shutdown
+02. R-002 | NPP-001 | PHWR | 700 | Operational | Scheduled maintenance shutdown
+03. R-003 | NPP-002 | PWR | 700 | Operational | No previous shutdown
+04. R-004 | NPP-002 | PWR | 700 | Operational | No previous shutdown
+05. R-005 | NPP-003 | PHWR | 800 | Operational | Annual maintenance
+06. R-006 | NPP-004 | PWR | 600 | Operational | No previous shutdown
+07. R-007 | NPP-005 | PHWR | 900 | Maintenance | Equipment inspection
+08. R-008 | NPP-006 | PWR | 500 | Operational | No previous shutdown
+09. R-009 | NPP-007 | PHWR | 750 | Operational | No previous shutdown
+10. R-010 | NPP-008 | PWR | 650 | Operational | Routine maintenance
+11. R-011 | NPP-009 | PHWR | 850 | Operational | No previous shutdown
+12. R-012 | NPP-010 | PWR | 550 | Operational | No previous shutdown
+13. R-013 | NPP-012 | PHWR | 625 | Operational | No previous shutdown
+14. R-014 | NPP-013 | PWR | 725 | Operational | Scheduled inspection
+15. R-015 | NPP-014 | PHWR | 775 | Operational | No previous shutdown
+16. R-016 | NPP-015 | PWR | 675 | Maintenance | Scheduled maintenance
+17. R-017 | NPP-016 | PHWR | 575 | Operational | No previous shutdown
+18. R-018 | NPP-017 | PWR | 525 | Operational | No previous shutdown
+19. R-019 | NPP-018 | PHWR | 825 | Operational | No previous shutdown
+20. R-020 | NPP-019 | PWR | 875 | Operational | No previous shutdown
+
+4. POWER GENERATION
+-------------------
+Fields: Generation ID | Plant ID | Reactor ID | Date | Daily Generation MWh | Efficiency %
+01. PG-001 | NPP-001 | R-001 | 2026-09-01 | 15500 | 91.5
+02. PG-002 | NPP-001 | R-002 | 2026-09-02 | 14900 | 89.8
+03. PG-003 | NPP-002 | R-003 | 2026-09-03 | 15200 | 90.2
+04. PG-004 | NPP-002 | R-004 | 2026-09-04 | 15000 | 89.5
+05. PG-005 | NPP-003 | R-005 | 2026-09-05 | 17200 | 92.1
+06. PG-006 | NPP-004 | R-006 | 2026-09-06 | 13500 | 88.4
+07. PG-007 | NPP-005 | R-007 | 2026-09-07 | 16000 | 90.7
+08. PG-008 | NPP-006 | R-008 | 2026-09-08 | 12000 | 87.9
+09. PG-009 | NPP-007 | R-009 | 2026-09-09 | 15800 | 91.0
+10. PG-010 | NPP-008 | R-010 | 2026-09-10 | 14000 | 88.9
+11. PG-011 | NPP-009 | R-011 | 2026-09-11 | 16500 | 91.8
+12. PG-012 | NPP-010 | R-012 | 2026-09-12 | 13000 | 88.2
+13. PG-013 | NPP-012 | R-013 | 2026-09-13 | 14200 | 89.1
+14. PG-014 | NPP-013 | R-014 | 2026-09-14 | 15100 | 90.0
+15. PG-015 | NPP-014 | R-015 | 2026-09-15 | 16200 | 91.2
+16. PG-016 | NPP-015 | R-016 | 2026-09-16 | 14500 | 88.7
+17. PG-017 | NPP-016 | R-017 | 2026-09-17 | 12500 | 87.5
+18. PG-018 | NPP-017 | R-018 | 2026-09-18 | 11800 | 86.9
+19. PG-019 | NPP-018 | R-019 | 2026-09-19 | 17000 | 92.0
+20. PG-020 | NPP-019 | R-020 | 2026-09-20 | 14950 | 89.9
+
+5. FUEL MANAGEMENT
+------------------
+Fields: Fuel ID | Reactor ID | Fuel Type | Quantity % | Status
+01. F-001 | R-001 | Uranium Fuel | 65 | In Use
+02. F-002 | R-002 | Uranium Fuel | 12 | Low
+03. F-003 | R-003 | Uranium Fuel | 72 | In Use
+04. F-004 | R-004 | Uranium Fuel | 58 | In Use
+05. F-005 | R-005 | Uranium Fuel | 81 | In Use
+06. F-006 | R-006 | Uranium Fuel | 43 | In Use
+07. F-007 | R-007 | Uranium Fuel | 14 | Low
+08. F-008 | R-008 | Uranium Fuel | 69 | In Use
+09. F-009 | R-009 | Uranium Fuel | 52 | In Use
+10. F-010 | R-010 | Uranium Fuel | 76 | In Use
+11. F-011 | R-011 | Uranium Fuel | 61 | In Use
+12. F-012 | R-012 | Uranium Fuel | 34 | In Use
+13. F-013 | R-013 | Uranium Fuel | 88 | In Use
+14. F-014 | R-014 | Uranium Fuel | 47 | In Use
+15. F-015 | R-015 | Uranium Fuel | 15 | In Use
+16. F-016 | R-016 | Uranium Fuel | 11 | Low
+17. F-017 | R-017 | Uranium Fuel | 67 | In Use
+18. F-018 | R-018 | Uranium Fuel | 73 | In Use
+19. F-019 | R-019 | Uranium Fuel | 55 | In Use
+20. F-020 | R-020 | Uranium Fuel | 29 | In Use
+
+6. FUEL ROD TRACKING
+--------------------
+Fields: Fuel Rod ID | Reactor ID | Installation Date | Remaining Life % | Status
+01. FR-001 | R-001 | 2026-01-15 | 85 | Active
+02. FR-002 | R-001 | 2025-01-10 | 18 | Attention Required
+03. FR-003 | R-002 | 2026-02-01 | 91 | Active
+04. FR-004 | R-002 | 2025-12-20 | 76 | Active
+05. FR-005 | R-003 | 2026-03-05 | 88 | Active
+06. FR-006 | R-004 | 2025-11-15 | 62 | Active
+07. FR-007 | R-005 | 2025-10-10 | 45 | Active
+08. FR-008 | R-006 | 2026-01-20 | 79 | Active
+09. FR-009 | R-007 | 2025-08-15 | 22 | Attention Required
+10. FR-010 | R-008 | 2026-04-01 | 94 | Active
+11. FR-011 | R-009 | 2025-09-10 | 35 | Active
+12. FR-012 | R-010 | 2026-02-18 | 82 | Active
+13. FR-013 | R-011 | 2025-07-25 | 28 | Attention Required
+14. FR-014 | R-012 | 2026-03-20 | 90 | Active
+15. FR-015 | R-013 | 2025-12-01 | 69 | Active
+16. FR-016 | R-014 | 2026-01-05 | 73 | Active
+17. FR-017 | R-015 | 2025-10-25 | 41 | Active
+18. FR-018 | R-016 | 2025-06-15 | 19 | Attention Required
+19. FR-019 | R-017 | 2026-05-10 | 96 | Active
+20. FR-020 | R-018 | 2026-04-15 | 87 | Active
+
+7. RADIATION ALERT
+------------------
+Fields: Sensor ID | Location | Reading uSv/h | Status | Alert
+01. RAD-001 | Reactor Building | 0.18 | Normal | No
+02. RAD-002 | Turbine Building | 0.12 | Normal | No
+03. RAD-003 | Control Room | 0.09 | Normal | No
+04. RAD-004 | Fuel Handling Area | 0.65 | Normal | No
+05. RAD-005 | Waste Storage Area | 1.2 | Warning | Yes
+06. RAD-006 | Reactor Area | 2.8 | High | Critical
+07. RAD-007 | Radiation Monitoring Room | 0.15 | Normal | No
+08. RAD-008 | Equipment Area | 0.35 | Normal | No
+09. RAD-009 | Maintenance Area | 1.4 | Warning | Yes
+10. RAD-010 | Emergency Area | 2.6 | High | Critical
+11. RAD-011 | Cooling Area | 0.22 | Normal | No
+12. RAD-012 | Control Building | 0.31 | Normal | No
+13. RAD-013 | Fuel Storage | 1.1 | Warning | Yes
+14. RAD-014 | Turbine Hall | 0.44 | Normal | No
+15. RAD-015 | Waste Processing | 2.7 | High | Critical
+16. RAD-016 | Service Area | 0.19 | Normal | No
+17. RAD-017 | Reactor Auxiliary Area | 0.72 | Normal | No
+18. RAD-018 | Monitoring Station | 1.3 | Warning | Yes
+19. RAD-019 | Equipment Room | 0.27 | Normal | No
+20. RAD-020 | Restricted Area | 2.9 | High | Critical
+
+8. RADIATION MONITORING
+-----------------------
+Fields: Sensor ID | Location | Reading uSv/h | Status | Alert
+01. RAD-001 | Reactor Building | 0.18 | Normal | No
+02. RAD-002 | Turbine Building | 0.12 | Normal | No
+03. RAD-003 | Control Room | 0.09 | Normal | No
+04. RAD-004 | Fuel Handling Area | 0.65 | Normal | No
+05. RAD-005 | Waste Storage Area | 1.2 | Warning | Yes
+06. RAD-006 | Reactor Area | 2.8 | High | Critical
+07. RAD-007 | Radiation Monitoring Room | 0.15 | Normal | No
+08. RAD-008 | Equipment Area | 0.35 | Normal | No
+09. RAD-009 | Maintenance Area | 0.48 | Normal | No
+10. RAD-010 | Emergency Area | 0.77 | Normal | No
+11. RAD-011 | Cooling Area | 0.22 | Normal | No
+12. RAD-012 | Control Building | 0.31 | Normal | No
+13. RAD-013 | Fuel Storage | 0.83 | Normal | No
+14. RAD-014 | Turbine Hall | 0.44 | Normal | No
+15. RAD-015 | Waste Processing | 1.55 | Warning | Yes
+16. RAD-016 | Service Area | 0.19 | Normal | No
+17. RAD-017 | Reactor Auxiliary Area | 0.72 | Normal | No
+18. RAD-018 | Monitoring Station | 0.61 | Normal | No
+19. RAD-019 | Equipment Room | 0.27 | Normal | No
+20. RAD-020 | Restricted Area | 1.85 | Warning | Yes
+
+9. RADIOACTIVE WASTE
+--------------------
+Fields: Waste ID | Waste Type | Source | Quantity | Activity Level | Generation Date | Status
+01. RW-001 | Solid | Reactor Area | 250 | Simulated-Medium | 2026-09-01 | Stored
+02. RW-002 | Liquid | Maintenance Area | 120 | Simulated-Low | 2026-09-02 | Stored
+03. RW-003 | Solid | Fuel Handling Area | 310 | Simulated-Medium | 2026-09-03 | Stored
+04. RW-004 | Liquid | Reactor Area | 180 | Simulated-Low | 2026-09-04 | Stored
+05. RW-005 | Solid | Waste Processing | 420 | Simulated-High | 2026-09-05 | Stored
+06. RW-006 | Metallic | Equipment Area | 95 | Simulated-Low | 2026-09-06 | Stored
+07. RW-007 | Solid | Maintenance Area | 275 | Simulated-Medium | 2026-09-07 | Stored
+08. RW-008 | Liquid | Reactor Area | 145 | Simulated-Low | 2026-09-08 | Transferred
+09. RW-009 | Solid | Fuel Handling Area | 360 | Simulated-Medium | 2026-09-09 | Stored
+10. RW-010 | Metallic | Turbine Area | 80 | Simulated-Low | 2026-09-10 | Stored
+11. RW-011 | Solid | Reactor Area | 290 | Simulated-Medium | 2026-09-11 | Stored
+12. RW-012 | Liquid | Maintenance Area | 160 | Simulated-Low | 2026-09-12 | Stored
+13. RW-013 | Solid | Waste Processing | 450 | Simulated-High | 2026-09-13 | Stored
+14. RW-014 | Metallic | Equipment Area | 110 | Simulated-Low | 2026-09-14 | Stored
+15. RW-015 | Solid | Fuel Handling Area | 330 | Simulated-Medium | 2026-09-15 | Stored
+16. RW-016 | Liquid | Reactor Area | 135 | Simulated-Low | 2026-09-16 | Stored
+17. RW-017 | Solid | Maintenance Area | 285 | Simulated-Medium | 2026-09-17 | Stored
+18. RW-018 | Metallic | Turbine Area | 90 | Simulated-Low | 2026-09-18 | Stored
+19. RW-019 | Solid | Waste Processing | 390 | Simulated-High | 2026-09-19 | Stored
+20. RW-020 | Liquid | Reactor Area | 155 | Simulated-Low | 2026-09-20 | Stored
+
+10. WASTE STORAGE
+-----------------
+Fields: Storage ID | Location | Capacity | Current Quantity | Status
+01. WS-001 | Waste Storage Area A | 10000 | 7500 | Active
+02. WS-002 | Waste Storage Area B | 10000 | 9200 | Near Full
+03. WS-003 | Waste Storage Area C | 12000 | 6400 | Active
+04. WS-004 | Waste Storage Area D | 8000 | 4500 | Active
+05. WS-005 | Long-Term Storage A | 15000 | 11800 | Active
+06. WS-006 | Long-Term Storage B | 15000 | 13500 | Near Full
+07. WS-007 | Temporary Storage A | 6000 | 3100 | Active
+08. WS-008 | Temporary Storage B | 6000 | 2800 | Active
+09. WS-009 | Waste Processing Store A | 9000 | 8100 | Active
+10. WS-010 | Waste Processing Store B | 9000 | 4000 | Active
+11. WS-011 | Solid Waste Store A | 11000 | 9800 | Near Full
+12. WS-012 | Solid Waste Store B | 11000 | 5600 | Active
+13. WS-013 | Liquid Waste Store A | 7000 | 3200 | Active
+14. WS-014 | Liquid Waste Store B | 7000 | 6500 | Near Full
+15. WS-015 | Emergency Waste Store | 5000 | 2100 | Active
+16. WS-016 | Backup Waste Store | 5000 | 1800 | Active
+17. WS-017 | Central Waste Store | 20000 | 17500 | Near Full
+18. WS-018 | Secondary Waste Store | 14000 | 7000 | Active
+19. WS-019 | Secure Waste Store | 13000 | 9500 | Active
+20. WS-020 | Research Waste Store | 4000 | 1200 | Active
+
+11. HR & EMPLOYEES
+------------------
+Fields: Employee ID | Name | Department | Designation | Phone | Email | Joining Date
+01. EMP-001 | Arun Kumar | Reactor Operations | Reactor Engineer | 9876543210 | arun@nucleus.com | 2025-06-10
+02. EMP-002 | Rahul Das | Radiation Monitoring | Radiation Monitoring Officer | 9876543211 | rahul@nucleus.com | 2025-07-15
+03. EMP-003 | David Joseph | Maintenance | Maintenance Engineer | 9876543212 | david@nucleus.com | 2024-08-20
+04. EMP-004 | Priya Nair | Safety | Safety Officer | 9876543213 | priya@nucleus.com | 2025-01-12
+05. EMP-005 | Vijay Kumar | Fuel Management | Fuel Engineer | 9876543214 | vijay@nucleus.com | 2024-05-18
+06. EMP-006 | Anita Roy | HR | HR Executive | 9876543215 | anita@nucleus.com | 2023-11-10
+07. EMP-007 | Karthik Rao | Security | Security Officer | 9876543216 | karthik@nucleus.com | 2024-02-14
+08. EMP-008 | Meena Das | Environmental Monitoring | Environmental Engineer | 9876543217 | meena@nucleus.com | 2025-03-22
+09. EMP-009 | Joseph Mathew | Finance | Finance Officer | 9876543218 | joseph@nucleus.com | 2023-08-16
+10. EMP-010 | Sanjay Singh | R&D | Research Engineer | 9876543219 | sanjay@nucleus.com | 2024-09-05
+11. EMP-011 | Lakshmi Menon | Reactor Operations | Reactor Operator | 9876543220 | lakshmi@nucleus.com | 2025-04-11
+12. EMP-012 | Ravi Sharma | Safety | Safety Engineer | 9876543221 | ravi@nucleus.com | 2024-07-19
+13. EMP-013 | Divya Rao | Radiation Monitoring | Radiation Technician | 9876543222 | divya@nucleus.com | 2025-02-08
+14. EMP-014 | Manoj Kumar | Maintenance | Maintenance Technician | 9876543223 | manoj@nucleus.com | 2024-12-01
+15. EMP-015 | Asha Thomas | HR | HR Assistant | 9876543224 | asha@nucleus.com | 2025-05-13
+16. EMP-016 | Nikhil Das | Fuel Management | Fuel Technician | 9876543225 | nikhil@nucleus.com | 2024-10-21
+17. EMP-017 | Suresh Babu | Environmental Monitoring | Environmental Officer | 9876543226 | suresh@nucleus.com | 2023-06-30
+18. EMP-018 | Neha Singh | Finance | Accounts Executive | 9876543227 | neha@nucleus.com | 2024-03-17
+19. EMP-019 | Arun Raj | R&D | Research Scientist | 9876543228 | arunraj@nucleus.com | 2025-08-09
+20. EMP-020 | Mohan Das | Reactor Operations | Senior Reactor Engineer | 9876543229 | mohan@nucleus.com | 2022-09-25
+
+12. RADIATION EXPOSURE
+----------------------
+Fields: Exposure ID | Employee ID | Exposure Value | Date | Status
+01. EX-001 | EMP-001 | 4.5 | 2026-09-01 | Normal
+02. EX-002 | EMP-002 | 12.5 | 2026-09-02 | High
+03. EX-003 | EMP-003 | 3.2 | 2026-09-03 | Normal
+04. EX-004 | EMP-004 | 5.1 | 2026-09-04 | Normal
+05. EX-005 | EMP-005 | 7.4 | 2026-09-05 | Normal
+06. EX-006 | EMP-006 | 2.1 | 2026-09-06 | Normal
+07. EX-007 | EMP-007 | 1.8 | 2026-09-07 | Normal
+08. EX-008 | EMP-008 | 6.2 | 2026-09-08 | Normal
+09. EX-009 | EMP-009 | 1.5 | 2026-09-09 | Normal
+10. EX-010 | EMP-010 | 8.7 | 2026-09-10 | Normal
+11. EX-011 | EMP-011 | 4.9 | 2026-09-11 | Normal
+12. EX-012 | EMP-012 | 11.8 | 2026-09-12 | High
+13. EX-013 | EMP-013 | 9.2 | 2026-09-13 | Normal
+14. EX-014 | EMP-014 | 3.7 | 2026-09-14 | Normal
+15. EX-015 | EMP-015 | 2.4 | 2026-09-15 | Normal
+16. EX-016 | EMP-016 | 10.9 | 2026-09-16 | High
+17. EX-017 | EMP-017 | 5.8 | 2026-09-17 | Normal
+18. EX-018 | EMP-018 | 1.2 | 2026-09-18 | Normal
+19. EX-019 | EMP-019 | 7.1 | 2026-09-19 | Normal
+20. EX-020 | EMP-020 | 4.0 | 2026-09-20 | Normal
+
+13. SAFETY INSPECTION
+---------------------
+Fields: Inspection ID | Plant ID | Inspector | Inspection Date | Area | Result | Remarks
+01. SI-001 | NPP-001 | EMP-004 | 2026-09-01 | Reactor Building | Passed | Inspection completed
+02. SI-002 | NPP-001 | EMP-004 | 2026-09-02 | Waste Storage Area | Attention Required | Storage area requires inspection
+03. SI-003 | NPP-002 | EMP-012 | 2026-09-03 | Turbine Building | Passed | Inspection completed
+04. SI-004 | NPP-002 | EMP-012 | 2026-09-04 | Control Room | Passed | Inspection completed
+05. SI-005 | NPP-003 | EMP-004 | 2026-09-05 | Fuel Handling Area | Attention Required | Minor issue recorded
+06. SI-006 | NPP-004 | EMP-012 | 2026-09-06 | Reactor Area | Passed | Inspection completed
+07. SI-007 | NPP-005 | EMP-004 | 2026-09-07 | Maintenance Area | Passed | Inspection completed
+08. SI-008 | NPP-006 | EMP-012 | 2026-09-08 | Equipment Area | Attention Required | Equipment inspection needed
+09. SI-009 | NPP-007 | EMP-004 | 2026-09-09 | Radiation Monitoring Room | Passed | Inspection completed
+10. SI-010 | NPP-008 | EMP-012 | 2026-09-10 | Waste Processing | Passed | Inspection completed
+11. SI-011 | NPP-009 | EMP-004 | 2026-09-11 | Reactor Building | Passed | Inspection completed
+12. SI-012 | NPP-010 | EMP-012 | 2026-09-12 | Fuel Storage | Attention Required | Follow-up required
+13. SI-013 | NPP-012 | EMP-004 | 2026-09-13 | Turbine Hall | Passed | Inspection completed
+14. SI-014 | NPP-013 | EMP-012 | 2026-09-14 | Control Building | Passed | Inspection completed
+15. SI-015 | NPP-014 | EMP-004 | 2026-09-15 | Equipment Room | Passed | Inspection completed
+16. SI-016 | NPP-015 | EMP-012 | 2026-09-16 | Waste Storage Area | Attention Required | Storage inspection required
+17. SI-017 | NPP-016 | EMP-004 | 2026-09-17 | Reactor Area | Passed | Inspection completed
+18. SI-018 | NPP-017 | EMP-012 | 2026-09-18 | Maintenance Area | Passed | Inspection completed
+19. SI-019 | NPP-018 | EMP-004 | 2026-09-19 | Fuel Handling Area | Passed | Inspection completed
+20. SI-020 | NPP-019 | EMP-012 | 2026-09-20 | Radiation Monitoring Room | Attention Required | Follow-up inspection
+
+14. MAINTENANCE
+---------------
+Fields: Maintenance ID | Equipment ID | Maintenance Date | Type | Status | Remarks
+01. M-001 | EQ-001 | 2026-10-05 | Preventive | Scheduled | Routine inspection
+02. M-002 | EQ-002 | 2026-09-10 | Preventive | Pending | Maintenance not completed
+03. M-003 | EQ-003 | 2026-09-25 | Preventive | Scheduled | Routine inspection
+04. M-004 | EQ-004 | 2026-09-08 | Corrective | Pending | Repair required
+05. M-005 | EQ-005 | 2026-10-12 | Preventive | Scheduled | Routine inspection
+06. M-006 | EQ-006 | 2026-09-05 | Corrective | Overdue | Work order pending
+07. M-007 | EQ-007 | 2026-10-20 | Preventive | Scheduled | Routine inspection
+08. M-008 | EQ-008 | 2026-09-18 | Corrective | Completed | Repair completed
+09. M-009 | EQ-009 | 2026-09-30 | Preventive | Scheduled | Routine inspection
+10. M-010 | EQ-010 | 2026-09-12 | Corrective | Overdue | Work order pending
+11. M-011 | EQ-011 | 2026-10-01 | Preventive | Scheduled | Routine inspection
+12. M-012 | EQ-012 | 2026-09-22 | Preventive | Scheduled | Routine inspection
+13. M-013 | EQ-013 | 2026-09-07 | Corrective | Pending | Inspection required
+14. M-014 | EQ-014 | 2026-10-15 | Preventive | Scheduled | Routine inspection
+15. M-015 | EQ-015 | 2026-09-14 | Corrective | Completed | Repair completed
+16. M-016 | EQ-016 | 2026-09-09 | Corrective | Overdue | Work order pending
+17. M-017 | EQ-017 | 2026-10-25 | Preventive | Scheduled | Routine inspection
+18. M-018 | EQ-018 | 2026-09-28 | Preventive | Scheduled | Routine inspection
+19. M-019 | EQ-019 | 2026-09-06 | Corrective | Pending | Repair required
+20. M-020 | EQ-020 | 2026-10-30 | Preventive | Scheduled | Routine inspection
+
+15. CAREER PROTOCOL
+-------------------
+Fields: Career ID | Employee ID | Current Position | Career Level | Promotion Status | Review Date | Remarks
+01. CR-001 | EMP-001 | Reactor Engineer | Level 2 | Eligible | 2026-09-20 | Performance review completed
+02. CR-002 | EMP-002 | Radiation Monitoring Officer | Level 1 | Under Review | 2026-09-20 | Career progression review pending
+03. CR-003 | EMP-003 | Maintenance Engineer | Level 2 | Eligible | 2026-09-20 | Good performance
+04. CR-004 | EMP-004 | Safety Officer | Level 2 | Eligible | 2026-09-20 | Safety performance reviewed
+05. CR-005 | EMP-005 | Fuel Engineer | Level 1 | Under Review | 2026-09-20 | Review pending
+06. CR-006 | EMP-006 | HR Executive | Level 2 | Eligible | 2026-09-20 | Performance review completed
+07. CR-007 | EMP-007 | Security Officer | Level 2 | Eligible | 2026-09-20 | Good performance
+08. CR-008 | EMP-008 | Environmental Engineer | Level 1 | Under Review | 2026-09-20 | Review pending
+09. CR-009 | EMP-009 | Finance Officer | Level 2 | Eligible | 2026-09-20 | Performance review completed
+10. CR-010 | EMP-010 | Research Engineer | Level 2 | Eligible | 2026-09-20 | Research targets achieved
+11. CR-011 | EMP-011 | Reactor Operator | Level 1 | Under Review | 2026-09-20 | Training review
+12. CR-012 | EMP-012 | Safety Engineer | Level 2 | Eligible | 2026-09-20 | Safety targets achieved
+13. CR-013 | EMP-013 | Radiation Technician | Level 1 | Under Review | 2026-09-20 | Training review
+14. CR-014 | EMP-014 | Maintenance Technician | Level 1 | Eligible | 2026-09-20 | Good performance
+15. CR-015 | EMP-015 | HR Assistant | Level 1 | Under Review | 2026-09-20 | Review pending
+16. CR-016 | EMP-016 | Fuel Technician | Level 1 | Eligible | 2026-09-20 | Good performance
+17. CR-017 | EMP-017 | Environmental Officer | Level 2 | Eligible | 2026-09-20 | Performance review completed
+18. CR-018 | EMP-018 | Accounts Executive | Level 1 | Under Review | 2026-09-20 | Review pending
+19. CR-019 | EMP-019 | Research Scientist | Level 2 | Eligible | 2026-09-20 | Research review completed
+20. CR-020 | EMP-020 | Senior Reactor Engineer | Level 3 | Eligible | 2026-09-20 | Senior performance review
+
+16. PAYROLL
+-----------
+Fields: Payroll ID | Employee ID | Basic Salary | Risk Allowance | Overtime | Other Allowance | Deductions
+01. PAY-001 | EMP-001 | 60000 | 5000 | 3000 | 2000 | 4000
+02. PAY-002 | EMP-002 | 55000 | 4500 | 2500 | 1500 | 3500
+03. PAY-003 | EMP-003 | 58000 | 4800 | 2000 | 1800 | 3800
+04. PAY-004 | EMP-004 | 57000 | 5200 | 1500 | 2000 | 3600
+05. PAY-005 | EMP-005 | 59000 | 5000 | 2500 | 1800 | 3900
+06. PAY-006 | EMP-006 | 45000 | 1000 | 1000 | 1500 | 2800
+07. PAY-007 | EMP-007 | 42000 | 1500 | 1200 | 1200 | 2500
+08. PAY-008 | EMP-008 | 52000 | 2500 | 1800 | 1600 | 3300
+09. PAY-009 | EMP-009 | 50000 | 500 | 800 | 1500 | 3200
+10. PAY-010 | EMP-010 | 62000 | 2500 | 2200 | 2000 | 4100
+11. PAY-011 | EMP-011 | 48000 | 3500 | 1800 | 1500 | 3000
+12. PAY-012 | EMP-012 | 56000 | 5000 | 1800 | 1700 | 3500
+13. PAY-013 | EMP-013 | 46000 | 3000 | 1500 | 1400 | 2900
+14. PAY-014 | EMP-014 | 44000 | 2800 | 1600 | 1300 | 2700
+15. PAY-015 | EMP-015 | 43000 | 1000 | 800 | 1200 | 2600
+16. PAY-016 | EMP-016 | 47000 | 3500 | 1700 | 1400 | 3000
+17. PAY-017 | EMP-017 | 51000 | 2200 | 1200 | 1500 | 3200
+18. PAY-018 | EMP-018 | 49000 | 500 | 900 | 1300 | 3100
+19. PAY-019 | EMP-019 | 65000 | 2500 | 2500 | 2200 | 4300
+20. PAY-020 | EMP-020 | 70000 | 6000 | 3500 | 2500 | 4500
+
+17. INTELLIGENT SAFETY ENGINE
+-----------------------------
+Fields: Condition | Recommendation | Severity | Priority
+01. Fuel < 15% | Schedule refueling. | Warning | High
+02. Storage > 90% full | Transfer waste to long-term storage. | Warning | High
+03. Maintenance overdue | Generate maintenance work order. | Warning | High
+04. High employee exposure | Remove employee from radiation zone. | Critical | High
+05. Equipment health poor | Replace equipment. | Warning | High
+06. Reactor temperature high (simulated) | Initiate controlled shutdown. | Critical | High
+07. Radiation level high (simulated) | Review radiation alert. | Critical | High
+08. Radiation trend rising | Investigate radiation trend. | Warning | Medium
+09. Waste storage approaching capacity | Review waste transfer planning. | Warning | Medium
+10. Fuel rod remaining life low | Review fuel rod replacement planning. | Warning | Medium
+11. Safety inspection attention required | Schedule follow-up inspection. | Warning | Medium
+12. Equipment maintenance pending | Review maintenance schedule. | Warning | Medium
+13. Repeated exposure warning | Review employee exposure history. | Warning | High
+14. Reactor status abnormal | Review reactor status record. | Critical | High
+15. Power generation efficiency low | Review generation performance. | Warning | Medium
+16. Waste record pending storage | Assign appropriate storage record. | Warning | Medium
+17. Storage facility near full | Review storage capacity. | Warning | Medium
+18. Maintenance work order pending | Review open work order. | Warning | Medium
+19. Fuel inventory declining | Review fuel inventory. | Warning | Medium
+20. Safety inspection overdue | Schedule safety inspection. | Warning | High
+
+18. RECOMMENDATION HISTORY
+--------------------------
+Fields: Condition | Recommendation | Severity | Priority | Status
+01. Fuel below 15% | Schedule refueling. | Warning | High | New
+02. Storage above 90% | Transfer waste to long-term storage. | Warning | High | New
+03. Maintenance overdue | Generate maintenance work order. | Warning | High | New
+04. High employee exposure | Remove employee from radiation zone. | Critical | High | New
+05. Equipment health poor | Replace equipment. | Warning | High | New
+06. Reactor temperature high | Initiate controlled shutdown. | Critical | High | New
+07. Radiation level high | Review radiation alert. | Critical | High | New
+08. Radiation trend rising | Investigate radiation trend. | Warning | Medium | New
+09. Waste storage approaching capacity | Review waste transfer planning. | Warning | Medium | New
+10. Fuel rod life low | Review replacement planning. | Warning | Medium | New
+11. Safety inspection attention required | Schedule follow-up inspection. | Warning | Medium | New
+12. Equipment maintenance pending | Review maintenance schedule. | Warning | Medium | New
+13. Repeated exposure warning | Review exposure history. | Warning | High | New
+14. Reactor status abnormal | Review reactor status. | Critical | High | New
+15. Low generation efficiency | Review generation performance. | Warning | Medium | New
+16. Waste pending storage | Assign storage. | Warning | Medium | New
+17. Storage facility near full | Review storage capacity. | Warning | Medium | New
+18. Maintenance work order pending | Review work order. | Warning | Medium | New
+19. Fuel inventory declining | Review fuel inventory. | Warning | Medium | New
+20. Safety inspection overdue | Schedule inspection. | Warning | High | New
+
+19. NOTIFICATION CENTRE
+-----------------------
+Fields: Recipient Role | Severity | Condition | Message | Status
+01. Admin | Warning | Fuel level below 15% | Schedule refueling. | New
+02. Plant Manager | Warning | Storage > 90% full | Transfer waste to long-term storage. | New
+03. Engineer | Warning | Maintenance overdue | Generate maintenance work order. | New
+04. Safety Officer | Critical | High employee exposure | Remove employee from radiation zone. | New
+05. Engineer | Warning | Equipment health poor | Replace equipment. | New
+06. Admin | Critical | High simulated reactor temperature | Initiate controlled shutdown. | New
+07. Plant Manager | Critical | Radiation level high | Review radiation alert. | New
+08. Safety Officer | Warning | Radiation trend rising | Investigate radiation trend. | New
+09. Admin | Warning | Waste storage approaching capacity | Review waste transfer planning. | New
+10. Engineer | Warning | Fuel rod remaining life low | Review replacement planning. | New
+11. Safety Officer | Warning | Safety inspection attention required | Schedule follow-up inspection. | New
+12. Engineer | Warning | Equipment maintenance pending | Review maintenance schedule. | New
+13. Safety Officer | Warning | Repeated exposure warning | Review employee exposure history. | New
+14. Plant Manager | Critical | Reactor status abnormal | Review reactor status record. | New
+15. Admin | Warning | Power generation efficiency low | Review generation performance. | New
+16. Plant Manager | Warning | Waste record pending storage | Assign appropriate storage record. | New
+17. Admin | Warning | Storage facility near full | Review storage capacity. | New
+18. Engineer | Warning | Maintenance work order pending | Review open work order. | New
+19. Plant Manager | Warning | Fuel inventory declining | Review fuel inventory. | New
+20. Safety Officer | Warning | Safety inspection overdue | Schedule safety inspection. | New
+
+20. LOGOUT
+----------
+Fields: Input | Action | Note
+01. No input required | Select option 20 | Logout |  | 
+
+BACKGROUND INTELLIGENT MONITORING
+======================================================================
+Automatic radiation readings: every 30 seconds.
+Demonstration radiation alerts: cycle 10, 30, 50, 70, ...
+Ctrl+C from live monitoring should return to the current role dashboard.
+Background monitoring continues after Ctrl+C.
+
+Intelligent rules:
+- Storage > 90% full -> Transfer waste to long-term storage.
+- Fuel < 15% -> Schedule refueling.
+- Maintenance overdue -> Generate maintenance work order.
+- High employee exposure -> Remove employee from radiation zone.
+- Equipment health poor -> Replace equipment.
+- Reactor temperature high (simulated) -> Initiate controlled shutdown.
